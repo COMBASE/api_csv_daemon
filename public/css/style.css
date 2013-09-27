@@ -1,0 +1,71 @@
+
+body {
+margin: 0;
+margin-bottom: 25px;
+padding: 0;
+background-color: #FFF;
+background-image: url("/images/swoppen-bg.jpg");
+/*background-repeat: no-repeat;*/
+background-position: top left;
+
+font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+font-size: 13px;
+color: #333;
+}
+#navi{
+	text-decoration: none;
+}
+h1 {
+font-size: 28px;
+color: #000;
+}
+
+a:link { text-decoration:none; font-weight:bold; }
+a:visited { text-decoration:none; font-weight:bold;  }
+a:hover { text-decoration:none; font-weight:bold; }
+a:active { text-decoration:none; font-weight:bold; }
+a:focus { text-decoration:none; font-weight:bold; }
+
+#page {
+background-color: #ddd;
+width: 750px;
+margin: auto;
+margin-left: auto;
+padding-left: 0px;
+margin-right: auto;
+}
+
+#content {
+background-color: white;
+border: 3px solid #aaa;
+border-top: none;
+padding: 25px;
+width: 500px;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: sans-serif;
+margin: 1.2em 0 0.6em 0;
+}
+
+p {
+line-height: 1.5em;
+margin: 1.6em 0;
+}
+
+code, tt {
+    font-family: 'Andale Mono', Monaco, 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+}
+
+#footer {
+clear: both;
+padding-top: 2em;
+text-align: center;
+padding-right: 160px;
+font-family: sans-serif;
+font-size: 10px;
+}
+
+.fieldset-auto-width{
+	display: inline-block;
+}

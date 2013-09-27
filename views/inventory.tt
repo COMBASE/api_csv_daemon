@@ -1,0 +1,29 @@
+<div id="subnavi">
+	<a href="[% request.uri_base %]/timetracking">stockorder</a>
+	<a href="[% request.uri_base %]/timetrackingentity">dispatchnotification</a>
+	<a href="[% request.uri_base %]/timetrackingperiodentry">stockreceipt</a>
+</div>
+<fieldset class="fieldset-auto-width">
+	<legend>Chash.IN</legend>
+	[% IF stockorder %]<ul>
+	[% USE giter = iterator(stockorder) %]
+		[% FOREACH g IN giter %]
+		[% SET items = g.items %]
+		<li>[% g.number %]</li>
+		<li>Items:[% items %]
+			<ul>[% FOREACH item IN items %]
+         		<li>[% item.bookedQuantity %]</li>
+   				[% END %]
+   			</ul>
+		</li>[% END %]
+	</ul>[% END %]
+
+	[% IF dispatchnotification %]<textarea cols="145" rows="10">
+		[% FOREACH g = dispatchnotification %]
+		[% END %]
+	</textarea>[% END %]
+	[% IF stockreceipt %]<textarea cols="145" rows="10">
+		[% FOREACH g = stockreceipt %]
+		[% END %]
+	</textarea>[% END %]
+</fieldset>

@@ -1,0 +1,56 @@
+{
+   "abstract" : "YOUR APPLICATION ABSTRACT",
+   "author" : [
+      "YOUR NAME <youremail@example.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.120351",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "swoppensystems",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DBD::SQLite" : "0",
+            "DBI" : "0",
+            "Dancer" : "1.311",
+            "Dancer::Plugin::Database" : "2.01",
+            "Dancer::Plugin::REST" : "0.07",
+            "Dancer::Serializer::JSON" : "0",
+            "Digest::MD5::File" : "0.08",
+            "HTTP::Tiny" : "0.035",
+            "JSON::Parse" : "0.23",
+            "Module::Refresh" : "0.17",
+            "Template" : "0",
+            "Test::More" : "0",
+            "Text::CSV" : "1.32",
+            "XML::Parser" : "2.41",
+            "XML::Twig" : "3.39",
+            "YAML" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "0.1"
+}

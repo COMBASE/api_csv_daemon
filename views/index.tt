@@ -1,0 +1,35 @@
+<fieldset class="fieldset-auto-width">
+	 <legend>Price List</legend>
+	<form name="input" action="/pricelist" method="post">
+		Name: <input type="text" name="name"> Number: <input type="text" name="number"><br />
+		[% IF currencys %]
+		<select name="currency">
+		    [% FOREACH curr = currencys %]<option value="[% curr.number %]">[% curr.name %]</option>[% END %]
+		</select>
+		[% END %]
+		Net Prices <input type="checkbox" name="net" /><br />
+		<input type="submit" value="Submit"><br />
+	</form>
+</fieldset>
+<fieldset class="fieldset-auto-width">
+	<legend>Customer Group</legend>
+	<form name="input" action="/customergroup" method="post">
+		[% IF customergroups %]
+		Existing:
+		<select name="customergroup">
+		    [% FOREACH cus = customergroups %]<option value="[% cus.uuid %]">[% cus.name %]</option>
+		    [% END %]
+		</select>
+		[% END %]
+		Name: <input type="text" name="name">
+		Number: <input type="text" name="number"><br />
+		<input type="submit" value="Submit"><br />
+	</form>
+</fieldset>
+<fieldset class="fieldset-auto-width">
+	<legend>Chash.IN</legend>
+	<form name="input" action="/chashin" method="post" enctype="multipart/form-data">
+		File: <input type="file" name="file"><br />
+		<input type="submit" value="Submit"><br />
+	</form>
+</fieldset>

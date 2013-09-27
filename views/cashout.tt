@@ -1,0 +1,10 @@
+<textarea cols="145" rows="10">
+[% IF receipts %][% FOREACH rec = receipts %]"[% rec.customer %]";"[% rec.receiptnumber %]";"[% rec.date %]";"[% rec.time %]";"[% rec.quantity %]";"[% rec.article %]";"[% rec.description %]";"[% rec.tax %]";"[% rec.grossItemPrice %]";"[% rec.grossItemPrice %]";"[% rec.currency %]";"[% rec.cashier %]";"[% rec.cashiername %]"
+[% END %][% END %]
+</textarea>
+<br />maxRevision: [% maxRevision %]
+<br />lastExportedRevision: [% lastExportedRevision %]
+<form method="get" action="cashout.csv">
+	Revision:<br /><input type="revision" name="revision" /><br />
+	<button type="submit">Download!</button>
+</form>

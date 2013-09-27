@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=[% settings.charset %]" />
+<title>cloudapitest</title>
+<link rel="stylesheet" href="[% request.uri_base %]/css/style.css" />
+</head>
+<body>
+<div id="navi">
+	<a href="[% request.uri_base %]/">HOME</a>
+	<a href="[% request.uri_base %]/cashout">CASH.OUT</a>
+</div>
+<hr>
+[% content %]
+<div id="footer">
+Powered by <a href="http://perldancer.org/">Dancer</a> [% dancer_version %]
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div id="subnavi">
+	<a href="[% request.uri_base %]/timetracking">timetracking</a>
+	<a href="[% request.uri_base %]/timetrackingentity">timetrackingentity</a>
+	<a href="[% request.uri_base %]/timetrackingperiodentry">timetrackingperiodentry</a>
+</div>
+<fieldset class="fieldset-auto-width">
+	<legend>Chash.IN</legend>
+	[% IF entityGrid %]<textarea cols="145" rows="10">
+		[% FOREACH g = entityGrid %]
+		[% END %]
+	</textarea>[% END %]
+	[% IF entryGrid %]<textarea cols="145" rows="10">
+		[% FOREACH g = entryGrid %]
+		[% END %]
+	</textarea>[% END %]
+</fieldset>

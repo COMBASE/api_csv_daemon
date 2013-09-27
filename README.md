@@ -1,4 +1,8 @@
 api_csv_daemon
 ==============
 
-Perl example for API interface to Konrona.pos Cloud
+A API interface to interact between Swoppen systems and Konrona.pos Cloud, based in Perl
+
+https://www.koronacloud.com/web/
+
+http://www.hotellerie.swoppen.com/
