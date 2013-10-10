@@ -15,7 +15,7 @@ use Data::Dumper;
 
 my $url = config->{url}.'/'.config->{version}.'/'.config->{token};
 my $customerGroup = config->{customergroup};
-my $file = 'C:\Dokumente und Einstellungen\user\Eigene Dateien\Dokumente\SwoppenSystems';
+my $file = '/home/maz/Dokumente/KORONA.pos/swoppensystems/files/';
 ###############################################################################
 sub main{
     my $thr = threads->new(\&sub1, "5");
@@ -40,7 +40,7 @@ sub sub1 {
 		foreach (@files){
 			my $fileEnding = /\.(.*)$/ ? $1 : '';
 			if($fileEnding eq 'csv'){
-				Import::CashIn->main($url, $customerGroup, "$file\\$_");
+				Import::CashIn->main($url, $customerGroup, "$file/$_");
 			}
 			sleep(1);
 		}

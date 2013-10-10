@@ -24,6 +24,7 @@ WriteMakefile(
         'Module::Refresh'           => 0.17,
         'Digest::MD5::File'         => 0.08,
         'HTTP::Tiny'                => 0.035,
+        'Net::SSLeay'               => 1.55,
 	'JSON::Parse'		    => 0.23,
 	'Text::CSV'		    => 1.32,
 	'XML::Parser'		    => 2.41,

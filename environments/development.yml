@@ -28,8 +28,8 @@ auto_reload: 1
 
 #filefolder:		'/home/maz/Dokumente/KORONA.pos/swoppensystems/files/'
 #token: 		'01eqqfn6r4s8310p49afhho6vjq0omc4hy3c193901drxeh6yiw7xq' #tobi
-token: 			'01wwr249pasm8a01wvljifd5ayonglbnxr7cskn7010axggjg0o1om'
-url: 			'http://10.0.0.201:8080/web/api'
+token: 			'0zrp2ftfnm3koj1omo1ao6mbu0f72v1v7v7sit01ip8lb6rgrkqx'
+url: 			'https://www.koronacloud.com/web/api'
 version: 		'v1'
 customergroup: 	'123456'
 
