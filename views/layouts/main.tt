@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=[% settings.charset %]" />
-<title>cloudapitest</title>
+<title>API CSV Daemon</title>
 <link rel="stylesheet" href="[% request.uri_base %]/css/style.css" />
 </head>
 <body>

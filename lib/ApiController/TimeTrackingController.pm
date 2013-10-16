@@ -1,4 +1,4 @@
-package ApiController::TimeTrackingController
+package ApiController::TimeTrackingController;
 
 use strict;
 use warnings;
